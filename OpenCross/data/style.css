@@ -1,0 +1,162 @@
+
+html,body {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  background-color: #fff;
+  color: #128;
+  text-align: center;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+header,.tim,.lev,.sta, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btim,.blev,.bsta {
+  border: 2px #333 solid;
+  background-color: #eee;
+  background-size: cover;
+}
+
+.btim:active,.blev:active,.bsta:active {
+  background-color:#fff;
+  border: 3px #eb0 solid;
+}
+
+header {
+  height: 10%;
+  flex: 100%;
+  margin: 0;
+  
+  background-color: #128;
+  color: #fff;
+  font-size: 1.5em;
+  font-style: oblique;
+  font-weight:bold;
+}
+
+.cross {
+  padding-left: 0.3ch;
+  color:#eb0;
+}
+
+#ctn {
+  height: 82%;
+  width: 100%;
+  max-width: 360px;
+}
+
+.tim {
+  height: 35%;
+  font-size: 2.5em;
+}
+
+.lev {
+  height: 30%;
+  font-size: 3em;
+}
+
+.sta {
+  height: 35%;
+}
+
+.btim {
+  min-width: 48px;
+  height: 48px;
+  margin: 24px;
+  border-radius: 50%;
+}
+
+
+.blev {
+  min-width: 100px;
+  height: 100px;
+  margin: 6%;
+  border-radius: 50%;
+}
+
+.bsta {
+  width: 100px;
+  height: 68px;
+  margin: 28px;
+  border-radius: 8px;
+}
+
+.minus {
+  background-image: url("./img/minus.png");
+}
+
+.plus {
+  background-image: url("./img/plus.png");
+}
+.play {
+  background-image: url("./img/play.png");
+}
+
+.pause {
+  background-image: url("./img/pause.png");
+}
+
+.stop {
+  background-image: url("./img/stop.png");
+}
+
+footer {  
+  height: 8%;
+  flex: 100%;
+  margin: 0;
+  font-size: 1em;
+  background-color: #128;
+  color: #fff;
+}
+
+.vid {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#load {
+  position: fixed;
+  top: 50%;
+  margin-top:-76px;
+  left: 50%;
+  margin-left:-76px;
+  border: 16px solid #1288;
+  border-radius: 50%;
+  border-top: 16px solid #eb0;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+p {
+  margin: 10px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCross</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>Open<span class="cross">Cross</span></header>
+    <div style="text-align:left; margin-left:3%;">
+      <p style="font-size: 1.2em"><b>Guide d'installation</b></p>
+      <p>1. Désactiver les données mobiles</p>
+      <p>2. Ouvrir votre navigateur web
+        <br>&nbsp;et allez à l'adresse suivante</p>
+      <p>&nbsp;<input id="url" type="text" size="24" value="http://opencross.local/run.htm" readonly>
+      <button onclick="copy()">copier</button></p>
+      <p>3. Une fois que la page est ouverte,
+        <br>&nbsp;aller dans le menu du navigateur et
+        <br>&nbsp;cliquer sur "Ajouter à l'ecran d'accueil"</p>
+      <p>Les prochains démarrages se feront directement depuis votre écran d'accueil<br><br></p>
+      
+      <p style="font-size: 1.2em"><b>Notes d'utilisation</b></p>
+      <p>OpenCross est une webapp sur serveur local. Son utilisation nécessite que le téléphone soit:</p>
+      <p>1. Connecté au réseau wifi OpenCross</p>
+      <p>2. Déconnecté d'internet<br>&nbsp;(données mobiles désactivées)</p>
+    </div>
+    <footer>iodeo.fr © 2021</footer>
+    <script>
+    function copy() {
+      var e = document.getElementById('url');
+      e.select();
+      e.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+    }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "OpenCross",
+  "icons": [
+    {
+      "src": "./img/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "./run.htm",
+  "background_color": "#128",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#eb0",
+  "description": "Crosstrainer monitor 2.0"
+}
