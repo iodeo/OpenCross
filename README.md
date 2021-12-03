@@ -12,4 +12,5 @@ NB: Default WiFi credentials should be modified
 
 # Resources
 
-Topology for captive portal is from https://yoursunny.com/t/2017/freewifi/
+Websockets: https://github.com/Links2004/arduinoWebSockets
+Captive portal: https://yoursunny.com/t/2017/freewifi/
