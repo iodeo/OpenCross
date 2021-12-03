@@ -14,3 +14,4 @@ NB: Default WiFi credentials should be modified
 
 * Websockets: https://github.com/Links2004/arduinoWebSockets
 * Captive portal: https://yoursunny.com/t/2017/freewifi/
+* Web (html/css/js): https://www.w3schools.com/html/default.asp
