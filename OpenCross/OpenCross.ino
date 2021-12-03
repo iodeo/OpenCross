@@ -219,42 +219,6 @@ void loop() {
     getDisconnected = false;
     setPwmLevel(0);
   }
-
-  /*if (getConnected) {
-    getConnected = false;
-    reqTime = true;
-  }*/
-
-  /*if (gotFreq) {  
-    gotFreq = false;
-    if ((temp >= 100) && (temp <= 40000)) pwmFreq = temp;
-    Serial.print("WriteFreq: ");Serial.println(pwmFreq);
-    analogWriteFreq(pwmFreq);
-  }
-
-  if (gotValue) {
-    gotValue = false;
-    if ((temp >= 0) && (temp <= 255)) pwmValue = temp;
-    Serial.print("WritePwm: ");Serial.println(pwmValue);
-    analogWrite(PWM_PIN, pwmValue);
-  }*/
-
-  
-
-  /*if (digitalRead(RPM_PIN)) {
-    if (!rpm) gotRpm = true;
-  }
-  else {
-    if (rpm) gotRpm = true;
-  }
-
-  if (gotRpm) {
-    gotRpm = false;
-    rpm = !rpm;
-    Serial.print("GotRpm: ");Serial.println(rpm);
-    if (rpm) webSocket.sendTXT(0, "rpmUp");
-    if (!rpm) webSocket.sendTXT(0, "rpmDown");
-  }*/
   
 }
 
@@ -272,7 +236,6 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 #if DEBUG          
         Serial.printf("[%u] Connected from %d.%d.%d.%d url: %s\n", num, ip[0], ip[1], ip[2], ip[3], payload);
 #endif        
-        //getConnected = true; 
       }
       break;
     case WStype_TEXT:
