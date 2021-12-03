@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>openCross</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header>Moniteur PWM</header>
+    <div class="ctn">
+      <br><label for="fi">Fréquence <span id="fv">10</span> kHz</label>
+      <br><input id="fi" title="freq" type="range" onchange="fupd()" value="10" min="0.1" max="40" step="0.1">
+      <br><label for="ri">Rapport cyclique <span id="rv">50</span> %</label>
+      <br><input id="ri" title="duty" type="range" onchange="rupd()" value="127" min="0" max="255" step="1">
+    </div>
+    <div id="rpm"></div>
+    <div class="dbg">
+      <code id="dbg"></code>
+    </div>
+    <footer>iodeo.fr © 2021</footer>
+  </body>
+</html>
